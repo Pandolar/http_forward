@@ -158,11 +158,11 @@ async def forward(request: Request, path: str):
 if __name__ == "__main__":
     logger.info("转发服务器启动", extra={
         "host": CONFIG.get('host', '0.0.0.0'),
-        "port": CONFIG.get('port', 8190)
+        "port": CONFIG.get('port', 18591)
     })
     uvicorn.run(
         app,
         host=CONFIG.get('host', '0.0.0.0'),
-        port=CONFIG.get('port', 8190),
+        port=CONFIG.get('port', 18591),
         log_config=None
     )

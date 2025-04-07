@@ -1,11 +1,11 @@
 # 转发目标URL列表
 forward_urls:
-  - "https://ai.xxx.cn/api/official/notify"
-  - "https://chat.xxx.cn/u/qr_login_callback"
+  - "https://acidic-iron-27.webhook.cool"
+#  - "https://chat.xxx.cn/u/qr_login_callback"
 
 # 服务器配置
 host: "0.0.0.0"
-port: 8190
+port: 18591
 
 # 日志配置
 log_file: "forwarder.log"

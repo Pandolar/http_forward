@@ -4,7 +4,7 @@ services:
   forwarder:
     build: .
     ports:
-      - "8190:8190"
+      - "18591:18591"
     volumes:
       - ./config:/config  # 将本地config目录挂载到容器内
     restart: unless-stopped

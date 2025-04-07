@@ -18,7 +18,7 @@ RUN mkdir -p /config && \
     ln -sf /config/config.yml /app/config.yml
 
 # 暴露端口
-EXPOSE 8190
+EXPOSE 18591
 
 # 运行命令
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8190"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "18591"]
