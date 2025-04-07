@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  forwarder:
+    build: .
+    ports:
+      - "8190:8190"
+    volumes:
+      - ./config:/config  # 将本地config目录挂载到容器内
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
